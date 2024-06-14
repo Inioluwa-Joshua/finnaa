@@ -78,6 +78,7 @@ export default function PageSettingsForm({ page, user }) {
                     <input type="hidden" name="bgImage" value={bgImage} />
                     <input
                       type="file"
+                      accept="image/*"
                       onChange={handleCoverImageChange}
                       className="hidden"
                     />
@@ -114,6 +115,7 @@ export default function PageSettingsForm({ page, user }) {
                 onChange={handleAvatarImageChange}
                 id="avatarIn"
                 type="file"
+                accept="image/*"
                 className="hidden"
               />
               <input type="hidden" name="avatar" value={avatar} />
